@@ -31,21 +31,6 @@ public class ShowHomeController {
 	  
 	  }
 	 
-	
-	@RequestMapping("/months")
-	public String months(Map<String, Object> map) {
-		map.put("attr2", "l2");
-		map.put("sysmon",YearMonth.now());
-		return null;//if you return null @RequestMapping("/months")name and .jsp name should be same 
-		
-	}
-	
-	@RequestMapping("/Date")
-	public void Date(Model model) {
-		model.addAttribute("attr3", "l3");
-		model.addAttribute("sysmonth",YearMonth.now());
-		
-	}
-	
+
 
 }
